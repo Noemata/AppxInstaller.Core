@@ -25,3 +25,6 @@ Note: This is a WIP POC that was created to reduce Appx sideloaded installation 
 
 ## Screenshot
 ![Screenshot](https://github.com/Noemata/AppxInstaller/raw/master/Screenshot.png)
+
+## Publish Settings
+![Screenshot](https://github.com/Noemata/AppxInstaller/raw/master/PublishSettings.png)
