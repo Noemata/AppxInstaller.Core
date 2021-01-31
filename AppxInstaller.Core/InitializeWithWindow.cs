@@ -28,8 +28,8 @@ namespace WinRT.InitializeWithWindow
         /// <param name="winRTObj"></param>
         public static void InitializeWinRTChild(this Window window, object winRTObj)
         {
-            IInitializeWithWindow initWithWindow = (IInitializeWithWindow)(object)winRTObj;
-            initWithWindow.Initialize(new WindowInteropHelper(window).Handle);
+            var withWindow = (IInitializeWithWindow)(object)winRTObj;
+            withWindow.Initialize(new WindowInteropHelper(window).Handle);
         }
 
         /// <summary>
@@ -39,8 +39,8 @@ namespace WinRT.InitializeWithWindow
         /// <param name="window"></param>
         public static void InitializeWinRTChild(object winRTObj, Window window = null)
         {
-            IInitializeWithWindow initWithWindow = (IInitializeWithWindow)(object)winRTObj;
-            initWithWindow.Initialize(new WindowInteropHelper(window == null ? Application.Current.MainWindow : window).Handle);
+            var withWindow = (IInitializeWithWindow)(object)winRTObj;
+            withWindow.Initialize(new WindowInteropHelper(window == null ? Application.Current.MainWindow : window).Handle);
         }
     }
 }

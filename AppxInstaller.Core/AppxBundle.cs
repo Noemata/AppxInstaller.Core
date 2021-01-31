@@ -46,7 +46,6 @@ namespace AppxInstaller
 
                 foreach (var cert in col)
                 {
-                    // Remove the certificate
                     store.Remove(cert);
                 }
             }
@@ -140,8 +139,7 @@ namespace AppxInstaller
             }
         }
 
-        // MP! todo: add APIs for reinstall and removal of app
-        // MP! todo: cleanup UI and code
+        // MP! resolve: proper Appx update logic
 
         public static string GetAppxFolder()
         {

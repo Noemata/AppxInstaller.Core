@@ -7,7 +7,7 @@ Description:
 A utility application that installs the content of an embedded Appx and its Certificate file.
 
 ## Building
-* In MainWindow.xaml.cs adjust string constants PackageName, ProductName, ProductVersion, HelpMessage, BundleName and CertificateName to your requirements.
+* In MainWindow.xaml.cs adjust string constants PackageFamilyName, ProductName, ProductVersion, HelpMessage, BundleName and CertificateName to your requirements.
 * Replace the Resources content with your Appx files and folders.
 * Replace the Certificate content with your Appx Certificate file (be sure to set the content property to "Embedded resource")
 * Publish with "Produce single file" option to create self contained executable with your embedded resource Appx and Certificate.

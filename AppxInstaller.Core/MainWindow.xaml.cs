@@ -25,7 +25,7 @@ namespace AppxInstaller
         const string HelpMessage = "Install Appx from:";
         const string BundleName = "SimpleApp_1.0.0.0_x64.msixbundle";
         const string CertificateName = "SimpleApp_1.0.0.0_x64.cer";
-        const string PackageName = "2495a1ba-4af4-437c-8405-e9cbf8378628_nw7zm7aeazf2e";
+        const string PackageFamilyName = "2495a1ba-4af4-437c-8405-e9cbf8378628_nw7zm7aeazf2e";
 
         public MainWindow()
         {
@@ -42,7 +42,7 @@ namespace AppxInstaller
 
         private void OnLoaded(object sender, RoutedEventArgs e)
         {
-            Setup = new ProductSetup(PackageName, ProductName, ProductVersion, BundleName, CertificateName);
+            Setup = new ProductSetup(PackageFamilyName, ProductName, ProductVersion, BundleName, CertificateName);
             Setup.InUiThread = this.InUiThread;
 
             DataContext = Setup;

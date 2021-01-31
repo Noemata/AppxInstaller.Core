@@ -20,14 +20,14 @@ namespace AppxInstaller
 
         const string installedmessage = "The product is {0}INSTALLED\n\n";
 
-        public AssetSetup(string packageName, string productName, string productVersion, string bundleName, string certificateName)
+        public AssetSetup(string packageFamilyName, string productName, string productVersion, string bundleName, string certificateName)
         {
             ProductName = productName;
             ProductVersion = productVersion;
             BundleName = bundleName;
             CertificateName = certificateName;
             InstallDirectory = AppxBundle.GetAppxFolder();
-            IsCurrentlyInstalled = AppxBundle.IsPackageInstalled(packageName, productVersion, out FullPackageName);
+            IsCurrentlyInstalled = AppxBundle.IsPackageInstalled(packageFamilyName, productVersion, out FullPackageName);
 
             ProductStatus = string.Format(installedmessage, IsCurrentlyInstalled ? "" : "NOT ");
         }
