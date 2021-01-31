@@ -28,3 +28,5 @@ Note: This is a WIP POC that was created to reduce Appx sideloaded installation 
 
 ## Publish Settings
 ![Screenshot](https://github.com/Noemata/AppxInstaller.Core/raw/master/PublishSettings.png)
+
+Note: The Trim option generates a non-functioning executable.
