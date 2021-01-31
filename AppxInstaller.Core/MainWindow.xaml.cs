@@ -6,6 +6,8 @@ using System.Windows.Threading;
 using Windows.UI.Popups;
 using Windows.Storage.Pickers;
 
+using WinRT.InitializeWithWindow;
+
 namespace AppxInstaller
 {
     // inetcpl.cpl
@@ -94,7 +96,10 @@ namespace AppxInstaller
 
         private async void OnHelp(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            // MP! resolve: whether to use WinRT dialog box.
+            string dlgMessage = HelpMessage + (Setup.InstallDirectory != null ? $"\n{Setup.InstallDirectory}" : "");
+            var dlg = new MessageDialog(dlgMessage, "Instructions:");
+            this.InitializeWinRTChild(dlg);
+            await dlg.ShowAsync();
         }
     }
 }
