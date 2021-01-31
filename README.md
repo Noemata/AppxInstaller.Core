@@ -24,7 +24,7 @@ Note: This is a WIP POC that was created to reduce Appx sideloaded installation 
 * Package handling ideas: https://github.com/colinkiama/UWP-Package-Installer , https://github.com/UWPX/UWPX-Installer
 
 ## Screenshot
-![Screenshot](https://github.com/Noemata/AppxInstaller/raw/master/Screenshot.png)
+![Screenshot](https://github.com/Noemata/AppxInstaller.Core/raw/master/Screenshot.png)
 
 ## Publish Settings
-![Screenshot](https://github.com/Noemata/AppxInstaller/raw/master/PublishSettings.png)
+![Screenshot](https://github.com/Noemata/AppxInstaller.Core/raw/master/PublishSettings.png)
