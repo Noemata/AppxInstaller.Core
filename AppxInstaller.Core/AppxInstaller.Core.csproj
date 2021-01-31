@@ -1,0 +1,164 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Certificate\SimpleApp_1.0.0.0_x64.cer" />
+    <None Remove="Resources\Add-AppDevPackage.resources\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\cs-CZ\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\de-DE\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\en-US\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\es-ES\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\fr-FR\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\it-IT\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\ja-JP\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\ko-KR\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\pl-PL\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\pt-BR\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\ru-RU\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\tr-TR\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\zh-CN\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Add-AppDevPackage.resources\zh-TW\Add-AppDevPackage.psd1" />
+    <None Remove="Resources\Dependencies\arm64\Microsoft.NET.Native.Framework.2.2.appx" />
+    <None Remove="Resources\Dependencies\arm64\Microsoft.NET.Native.Runtime.2.2.appx" />
+    <None Remove="Resources\Dependencies\arm64\Microsoft.VCLibs.ARM64.14.00.appx" />
+    <None Remove="Resources\Dependencies\arm\Microsoft.NET.Native.Framework.2.2.appx" />
+    <None Remove="Resources\Dependencies\arm\Microsoft.NET.Native.Runtime.2.2.appx" />
+    <None Remove="Resources\Dependencies\arm\Microsoft.VCLibs.ARM.14.00.appx" />
+    <None Remove="Resources\Dependencies\x64\Microsoft.NET.Native.Framework.2.2.appx" />
+    <None Remove="Resources\Dependencies\x64\Microsoft.NET.Native.Runtime.2.2.appx" />
+    <None Remove="Resources\Dependencies\x64\Microsoft.VCLibs.x64.14.00.appx" />
+    <None Remove="Resources\Dependencies\x86\Microsoft.NET.Native.Framework.2.2.appx" />
+    <None Remove="Resources\Dependencies\x86\Microsoft.NET.Native.Runtime.2.2.appx" />
+    <None Remove="Resources\Dependencies\x86\Microsoft.VCLibs.x86.14.00.appx" />
+    <None Remove="Resources\SimpleApp_1.0.0.0_x64.msixbundle" />
+    <None Remove="Resources\TelemetryDependencies\LogSideloadingTelemetry.ps1" />
+    <None Remove="Resources\TelemetryDependencies\Microsoft.VisualStudio.RemoteControl.dll" />
+    <None Remove="Resources\TelemetryDependencies\Microsoft.VisualStudio.Telemetry.dll" />
+    <None Remove="Resources\TelemetryDependencies\Microsoft.VisualStudio.Utilities.Internal.dll" />
+    <None Remove="Resources\TelemetryDependencies\Newtonsoft.Json.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Add-AppDevPackage.resources\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\cs-CZ\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\de-DE\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\en-US\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\es-ES\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\fr-FR\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\it-IT\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\ja-JP\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\ko-KR\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\pl-PL\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\pt-BR\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\ru-RU\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\tr-TR\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\zh-CN\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Add-AppDevPackage.resources\zh-TW\Add-AppDevPackage.psd1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm64\Microsoft.NET.Native.Framework.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm64\Microsoft.VCLibs.ARM64.14.00.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm\Microsoft.NET.Native.Framework.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm\Microsoft.NET.Native.Runtime.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\arm\Microsoft.VCLibs.ARM.14.00.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x64\Microsoft.NET.Native.Framework.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x64\Microsoft.VCLibs.x64.14.00.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x86\Microsoft.NET.Native.Framework.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x86\Microsoft.NET.Native.Runtime.2.2.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dependencies\x86\Microsoft.VCLibs.x86.14.00.appx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\SimpleApp_1.0.0.0_x64.msixbundle">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelemetryDependencies\LogSideloadingTelemetry.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelemetryDependencies\Microsoft.VisualStudio.RemoteControl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelemetryDependencies\Microsoft.VisualStudio.Telemetry.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelemetryDependencies\Microsoft.VisualStudio.Utilities.Internal.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\TelemetryDependencies\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Certificate\SimpleApp_1.0.0.0_x64.cer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Runtime.WindowsRuntime">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETCore\v4.5\System.Runtime.WindowsRuntime.dll</HintPath>
+    </Reference>    
+    <Reference Include="Windows">
+      <HintPath>C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd</HintPath>
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+  </ItemGroup>
+  
+</Project>
